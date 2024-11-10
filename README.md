@@ -37,10 +37,10 @@ Clues:
 ### Output
 ```
 Solution:
-Boy 1: Name=Daniel, Age=12, Shirt=Green, Movie=Action, Snack=Chips
-Boy 2: Name=Joshua, Age=13, Shirt=Blue, Movie=Horror, Snack=Popcorn
-Boy 3: Name=Nicholas, Age=14, Shirt=Red, Movie=Thriller, Snack=Cookies
-Boy 4: Name=Ryan, Age=11, Shirt=Black, Movie=Comedy, Snack=Crackers
+Boy 1: Shirt=Green, Name=Joshua, Movie=Horror, Snack=Popcorn, Age=13
+Boy 2: Shirt=Red, Name=Ryan, Movie=Comedy, Snack=Chips, Age=12
+Boy 3: Shirt=Black, Name=Nicholas, Movie=Action, Snack=Crackers, Age=14
+Boy 4: Shirt=Blue, Name=Daniel, Movie=Thriller, Snack=Cookies, Age=11
 ```
 ## Prolog
 ### Running the Program
