@@ -52,8 +52,8 @@ Boy 4: Name=Ryan, Age=11, Shirt=Black, Movie=Comedy, Snack=Crackers
    ```
 ### Output
 ```
-Boy 1. [name:joshua, age:12, shirt:green, movie:horror, snack:popcorn]
-Boy 2. [name:ryan, age:13, shirt:red, movie:comedy, snack:chips]
-Boy 3. [name:nicholas, age:14, shirt:black, movie:action, snack:crackers]
-Boy 4. [name:daniel, age:11, shirt:blue, movie:thriller, snack:cookies]
+Boy 1: [name:joshua, age:12, shirt:green, movie:horror, snack:popcorn]
+Boy 2: [name:ryan, age:13, shirt:red, movie:comedy, snack:chips]
+Boy 3: [name:nicholas, age:14, shirt:black, movie:action, snack:crackers]
+Boy 4: [name:daniel, age:11, shirt:blue, movie:thriller, snack:cookies]
    
