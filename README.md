@@ -24,7 +24,7 @@ Clues:
 
 ## Files
 - `main.py`: Python file that solves the logic puzzle
-- 'prologcode.pl' : Prolog file that solves the logic puzzle
+- 'PrologCode.pl' : Prolog file that solves the logic puzzle
 
 ## Python
 ### Running the Program
