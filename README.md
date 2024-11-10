@@ -50,6 +50,19 @@ Boy 4: Name=Ryan, Age=11, Shirt=Black, Movie=Comedy, Snack=Crackers
    ```
    Prolog Prolog.py
    ```
+## Clues for Prolog Logic Puzzle
+- Joshua's Position: Joshua is either in the first or the last position (first or fourth).
+- Joshua's Shirt: The person in the first position is wearing a green shirt.
+- Joshua's Movie Preference: Joshua's favorite movie is horror.
+- Age Clue: The person who is 14 years old is in the third position.
+- Cookies Snack: Either the first or the last person prefers cookies.
+- Thriller Movie: The person in the first position likes a thriller movie, or the person in the last position does.
+- Black Shirt: The person wearing a black shirt is positioned before the youngest person (the person who is 11 years old).
+- Comedy Movie: The person who likes comedy movies is positioned immediately after the person who likes crackers.
+- Red Shirt: The person wearing a red shirt is positioned before the person who likes popcorn, who is also before the person named Nicholas.
+- Daniel's Position: Daniel is in the second position.
+- Relative Positioning: Joshua is positioned before Nicholas, and Nicholas is positioned before Daniel.
+
 ### Output
 ```
 Boy 1: [name:joshua, age:12, shirt:green, movie:horror, snack:popcorn]
