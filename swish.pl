@@ -7,7 +7,7 @@ snacks([cookies, crackers, popcorn, chips]).
 
 % Main predicate to solve the puzzle
 solve(Solution) :-
-    % Each attribute is represented by a list of length 4 (one value per person),
+    % Each attribute is represented by a list of length 4 (one value per person)
     names(Names),
     permutation(Names, [N1, N2, N3, N4]),
     
@@ -23,38 +23,53 @@ solve(Solution) :-
     snacks(Snacks),
     permutation(Snacks, [Sn1, Sn2, Sn3, Sn4]),
 
-    % Applying constraints based on the desired output
-    N2 = joshua,
-    A3 = 14,
-    N3 = nicholas,
-    N4 = ryan,
-    N1 = daniel,
+    % Clues
+    (N1 = joshua; N4 = joshua),
     
-    A2 = 13,
-    A4 = 11,
-    A1 = 12,
-
+    nth1(BlackPos, [S1, S2, S3, S4], black),
+    nth1(YoungestPos, [A1, A2, A3, A4], 11),
+    BlackPos < YoungestPos,
+    
+    nth1(JoshuaPos, [N1, N2, N3, N4], joshua),
+    nth1(HorrorPos, [M1, M2, M3, M4], horror),
+    JoshuaPos =:= HorrorPos,
+    
+    A3 = 14,
+    
+    nth1(RedPos, [S1, S2, S3, S4], red),
+    nth1(Pos13, [A1, A2, A3, A4], 13),
+    nth1(ActionPos, [M1, M2, M3, M4], action),
+    Pos13 < RedPos, RedPos < ActionPos,
+    
+    nth1(DanielPos, [N1, N2, N3, N4], daniel),
+    nth1(ThrillerPos, [M1, M2, M3, M4], thriller),
+    DanielPos =:= ThrillerPos,
+    
+    (Sn1 = cookies; Sn4 = cookies),
+    
+    BlackPos + 1 =:= ThrillerPos,
+    
+    nth1(ComedyPos, [M1, M2, M3, M4], comedy),
+    nth1(CrackersPos, [Sn1, Sn2, Sn3, Sn4], crackers),
+    ComedyPos + 1 =:= CrackersPos,
+    
+    nth1(PopcornPos, [Sn1, Sn2, Sn3, Sn4], popcorn),
+    nth1(NicholasPos, [N1, N2, N3, N4], nicholas),
+    PopcornPos < RedPos, RedPos < NicholasPos,
+    
+    (M1 = thriller; M4 = thriller),
+    
+    nth1(DanielPos, [N1, N2, N3, N4], daniel),
+    JoshuaPos < NicholasPos, NicholasPos < DanielPos,
+    
     S1 = green,
-    S2 = blue,
-    S3 = red,
-    S4 = black,
-
-    M1 = action,
-    M2 = horror,
-    M3 = thriller,
-    M4 = comedy,
-
-    Sn1 = chips,
-    Sn2 = popcorn,
-    Sn3 = cookies,
-    Sn4 = crackers,
 
     % Solution format
     Solution = [
-        [name: N1, age: A1, shirt: S1, movie: M1, snack: Sn1],
-        [name: N2, age: A2, shirt: S2, movie: M2, snack: Sn2],
-        [name: N3, age: A3, shirt: S3, movie: M3, snack: Sn3],
-        [name: N4, age: A4, shirt: S4, movie: M4, snack: Sn4]
+        [boy1: shirt: S1, name: N1, movie: M1, snack: Sn1, age: A1],
+        [boy2: shirt: S2, name: N2, movie: M2, snack: Sn2, age: A2],
+        [boy3: shirt: S3, name: N3, movie: M3, snack: Sn3, age: A3],
+        [boy4: shirt: S4, name: N4, movie: M4, snack: Sn4, age: A4]
     ].
 
 % Run the solution and print it
@@ -64,6 +79,3 @@ print_solution :-
     forall(member(Person, Solution), (
         write(Person), nl
     )).
-
-% Initialization directive to execute print_solution at the start
-:- initialization(print_solution).
