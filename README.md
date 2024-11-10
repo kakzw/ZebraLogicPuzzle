@@ -42,3 +42,17 @@ Boy 2: Name=Joshua, Age=13, Shirt=Blue, Movie=Horror, Snack=Popcorn
 Boy 3: Name=Nicholas, Age=14, Shirt=Red, Movie=Thriller, Snack=Cookies
 Boy 4: Name=Ryan, Age=11, Shirt=Black, Movie=Comedy, Snack=Crackers
 ```
+## Prolog
+### Running the Program
+1. Open a prolog compiler (Swish.swi)
+2. Copy the code given and paste into compiler
+3. Run the program with an output command : print_solution.
+   ```
+   Prolog Prolog.py
+   ```
+### Output
+[name:joshua, age:12, shirt:green, movie:horror, snack:popcorn]
+[name:ryan, age:13, shirt:red, movie:comedy, snack:chips]
+[name:nicholas, age:14, shirt:black, movie:action, snack:crackers]
+[name:daniel, age:11, shirt:blue, movie:thriller, snack:cookies]
+   
