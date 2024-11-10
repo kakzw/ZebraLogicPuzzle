@@ -24,7 +24,7 @@ Clues:
 
 ## Files
 - `main.py`: Python file that solves the logic puzzle
-- `Prolog.py` : Prolog file that solves the logic puzzle
+- `swish.pl` : Prolog file that solves the logic puzzle
 
 ## Python
 ### Running the Program
@@ -48,7 +48,7 @@ Boy 4: Name=Ryan, Age=11, Shirt=Black, Movie=Comedy, Snack=Crackers
 2. Copy the code given and paste into compiler
 3. Run the program with an output command : print_solution.
    ```
-   Prolog Prolog.py
+   Prolog swish.pl
    ```
 ## Clues for Prolog Logic Puzzle
 - Joshua's Position: Joshua is either in the first or the last position (first or fourth).
@@ -65,8 +65,8 @@ Boy 4: Name=Ryan, Age=11, Shirt=Black, Movie=Comedy, Snack=Crackers
 
 ### Output
 ```
-Boy 1: [name:joshua, age:12, shirt:green, movie:horror, snack:popcorn]
-Boy 2: [name:ryan, age:13, shirt:red, movie:comedy, snack:chips]
-Boy 3: [name:nicholas, age:14, shirt:black, movie:action, snack:crackers]
-Boy 4: [name:daniel, age:11, shirt:blue, movie:thriller, snack:cookies]
+Boy 1: [name:daniel, age:12, shirt:green, movie:action, snack:chips]
+Boy 2: [name:joshua, age:13, shirt:blue, movie:horror, snack:popcorn]
+Boy 3: [name:nicholas, age:14, shirt:red, movie:thriller, snack:cookies]
+Boy 4: [name:ryan, age:11, shirt:black, movie:comedy, snack:crackers]
    
